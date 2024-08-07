@@ -12,7 +12,7 @@ type JWTService struct {
 	config config.Config
 }
 
-func NewJWTService(config *config.Config) *JWTService {
+func New(config *config.Config) *JWTService {
 	return &JWTService{
 		config: *config,
 	}

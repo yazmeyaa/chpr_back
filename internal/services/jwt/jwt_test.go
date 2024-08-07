@@ -8,7 +8,7 @@ import (
 
 func TestJWT(t *testing.T) {
 	config := config.New()
-	jwtService := NewJWTService(config)
+	jwtService := New(config)
 
 	token := jwtService.GenerateToken(CreateTokenOptions{
 		Name: "yazmeyaa",
